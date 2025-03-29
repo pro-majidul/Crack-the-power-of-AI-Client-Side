@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const navItmes = <>
-        <li><a>Home </a></li>
+        <li><Link to='/'>Home </Link></li>
 
-        <li><a>Picture </a></li>
+        <li><Link to='/all-image'>All Picture </Link></li>
+        <li><Link to='/genarate'>Genarate Picture </Link></li>
     </>
     return (
         <section className='bg-base-100 shadow-sm'>
@@ -28,7 +30,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to='/login' className="btn">Login</Link >
                 </div>
             </div>
         </section>

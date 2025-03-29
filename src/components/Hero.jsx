@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Hero = () => {
     return (
@@ -10,7 +11,7 @@ const Hero = () => {
                 <p className="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
                 <div className="flex flex-wrap justify-center">
                     <button className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">Get started</button>
-                    <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-900 dark:border-gray-300">Learn more</button>
+                    <Link to='/generate'><button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-900 dark:border-gray-300">Genarate Image</button></Link>
                 </div>
             </div>
         </section>
